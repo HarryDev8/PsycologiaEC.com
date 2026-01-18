@@ -677,65 +677,63 @@
         }
 
         // Clarity IA Logic
-        async function analyzeThought() {
-            const inputField = document.getElementById('user-thought');
-            const resultContainer = document.getElementById('result-container');
-            const aiResponseDiv = document.getElementById('ai-response');
-            const btnText = document.getElementById('btn-text');
-            const btnLoader = document.getElementById('btn-loader');
-            const analyzeBtn = document.getElementById('analyze-btn');
-            const userText = inputField.value.trim();
+async function analyzeThought() {
+    // 1. Referencias a elementos del DOM (Esto sigue igual)
+    const inputField = document.getElementById('user-thought');
+    const resultContainer = document.getElementById('result-container');
+    const aiResponseDiv = document.getElementById('ai-response');
+    const btnText = document.getElementById('btn-text');
+    const btnLoader = document.getElementById('btn-loader');
+    const analyzeBtn = document.getElementById('analyze-btn');
+    const userText = inputField.value.trim();
 
-            if (!userText) { alert('Por favor, escribe algo para analizar.'); return; }
+    if (!userText) { alert('Por favor, escribe algo para analizar.'); return; }
 
-            // TU API KEY REAL INTEGRADA
-            const apiKey = "AIzaSyCnc6P-QVXtIF12D6vhavUMhj0LG1OQSeA"; 
+    // --- CAMBIO 1: SEGURIDAD ---
+    // Ya no hay API Key aquí. En su lugar, ponemos la dirección de tu "oficina privada" (Apps Script).
+    // PEGA AQUÍ LA URL QUE OBTUVISTE AL DARLE PERMISOS (empieza por https://script.google.com/...)
+    const backendUrl = "https://script.google.com/macros/s/AKfycbxkybo1HigEvbesp7dbOP1vZK--ron6MChBl8QsKZ1IFOWRdwxdqEeuFHY3kBoG0YA42A/exec"; 
 
-            btnText.classList.add('opacity-0');
-            btnLoader.classList.remove('hidden');
-            analyzeBtn.disabled = true;
-            resultContainer.classList.add('hidden');
+    // Efectos visuales de carga (Sigue igual)
+    btnText.classList.add('opacity-0');
+    btnLoader.classList.remove('hidden');
+    analyzeBtn.disabled = true;
+    resultContainer.classList.add('hidden');
 
-            try {
-                const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=${apiKey}`, {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({
-                        contents: [{ parts: [{ text: userText }] }],
-                        systemInstruction: {
-                            parts: [{
-                                text: `Actúa como un asistente clínico experto en Terapias Cognitivo Conductuales de Tercera Generación (ACT, DBT, TREC). Tu nombre es Clarity.
-                                IMPORTANTE: NO uses Markdown. Responde con HTML.
-                                Estructura:
-                                <p>Hola, gracias por usar a Clarity IA...</p>
-                                <ol>
-                                    <li><b>Validación:</b> Frase empática.</li>
-                                    <li><b>Análisis Breve:</b> Identifica distorsión o evitación.</li>
-                                    <li><b>Herramienta Sugerida:</b> Técnica breve (metáfora ACT, etc).</li>
-                                    <li><b>Cierre:</b> Frase motivadora.</li>
-                                </ol>
-                                Tono: Profesional, cálido, conciso (máx 150 palabras). Idioma: Español.`
-                            }]
-                        }
-                    })
-                });
+    try {
+        // --- CAMBIO 2: LA PETICIÓN (FETCH) ---
+        // Antes: Le enviábamos a Google un JSON gigante con 'contents', 'systemInstruction', etc.
+        // Ahora: Le enviamos a TU script un JSON simple solo con el texto. Tu script se encarga del resto.
+        const response = await fetch(backendUrl, {
+            method: 'POST',
+            // Apps Script suele requerir 'no-cors' a veces, pero probemos primero estándar
+            // Si te da error de CORS, avísame, pero con 'text/plain' suele pasar bien.
+            // Para Apps Script web apps, a veces enviar como string directo es más robusto:
+            body: JSON.stringify({ text: userText }) 
+        });
 
-                const data = await response.json();
-                if (data.error) throw new Error(data.error.message);
-                
-                aiResponseDiv.innerHTML = data.candidates[0].content.parts[0].text;
-                resultContainer.classList.remove('hidden');
-                resultContainer.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        const data = await response.json();
 
-            } catch (error) {
-                console.error('Error:', error);
-                alert('Hubo un error al conectar con el asistente. Verifica tu conexión.');
-            } finally {
-                btnText.classList.remove('opacity-0');
-                btnLoader.classList.add('hidden');
-                analyzeBtn.disabled = false;
-            }
-        }
+        // --- CAMBIO 3: LEER LA RESPUESTA ---
+        // Antes: data.candidates[0].content.parts[0].text (Estructura compleja de Gemini)
+        // Ahora: data.result (Estructura simple que creamos en tu Apps Script)
+        if (data.error) throw new Error(data.error);
+        
+        aiResponseDiv.innerHTML = data.result;
+        
+        resultContainer.classList.remove('hidden');
+        resultContainer.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+
+    } catch (error) {
+        console.error('Error:', error);
+        alert('Hubo un error al conectar con Clarity. Intenta de nuevo.');
+    } finally {
+        btnText.classList.remove('opacity-0');
+        btnLoader.classList.add('hidden');
+        analyzeBtn.disabled = false;
+    }
+}
     </script>
 </body>
+
 </html>
