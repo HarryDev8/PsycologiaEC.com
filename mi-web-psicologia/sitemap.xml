@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://www.psycologiaec.com/</loc>
+        <!-- Fecha de última modificación: Cámbiala cuando hagas actualizaciones importantes -->
+        <lastmod>2025-12-04</lastmod>
+        <!-- Frecuencia de cambio: Le dice a Google que revise mensualmente -->
+        <changefreq>monthly</changefreq>
+        <!-- Prioridad: 1.0 es el máximo, indicando que es la home -->
+        <priority>1.0</priority>
+    </url>
+</urlset>

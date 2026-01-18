@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Título Optimizado -->
+    <title>Psicólogo Cognitivo Conductual Quito | Daniel Romero</title>
+    
+    <!-- Meta Descripción Optimizada -->
+    <meta name="description" content="Psicólogo en Quito especialista en Terapia Cognitivo Conductual (ACT, DBT). Atención presencial y online para niños, adolescentes y adultos. Agenda tu cita hoy.">
+    
+    <!-- Palabras Clave -->
+    <meta name="keywords" content="Psicologo en Quito, Psicologo Cognitivo Conductual Quito, Terapia en Quito, Terapia de Tercera Generación, Psicoterapia Quito, Psicoterapeuta cognitivo conductual, Daniel Romero, Salud Mental Ecuador, ACT, DBT, TREC, Terapia adolescentes Quito, Terapia infantil Quito">
+    
+    <!-- Geo-localización -->
+    <meta name="geo.region" content="EC-P" />
+    <meta name="geo.placename" content="Quito" />
+    <meta name="geo.position" content="-0.198357;-78.497576" />
+    <meta name="ICBM" content="-0.198357, -78.497576" />
+
+    <!-- Open Graph (Redes Sociales) -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.psycologiaec.com/">
+    <meta property="og:title" content="Daniel Romero | Psicólogo Cognitivo Conductual en Quito">
+    <meta property="og:description" content="Terapia basada en evidencia (ACT, DBT, TREC) para niños, adolescentes y adultos. Atención presencial en Quito y Online.">
+    <meta property="og:image" content="https://www.psycologiaec.com/f-perfil-sf.png">
+
+    <!-- Favicon -->
+    <link rel="icon" href="icono-pestanaweb.png" type="image/png">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.psycologiaec.com/" />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Configuración Tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            text: '#231f20',
+                            primary: '#004aa3',
+                            secondary: '#1a7af0',
+                            accent: '#f0a41a',
+                            light: '#f8fafc',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Merriweather', 'serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'fade-in': 'fadeIn 0.5s ease-out',
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0', transform: 'translateY(10px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Fuentes Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Merriweather:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
+    
+    <!-- Iconos Lucide -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- SCHEMA.ORG JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Physician",
+      "name": "Psicólogo Clínico Daniel Romero",
+      "image": "https://www.psycologiaec.com/f-perfil-sf.png",
+      "@id": "https://www.psycologiaec.com",
+      "url": "https://www.psycologiaec.com",
+      "telephone": "+59398777430",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Francisco Pizarro y Sta. María",
+        "addressLocality": "Quito",
+        "addressRegion": "Pichincha",
+        "postalCode": "170150",
+        "addressCountry": "EC"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -0.198357,
+        "longitude": -78.497576
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "09:00",
+        "closes": "18:00"
+      },
+      "medicalSpecialty": ["Psychology", "Cognitive Behavioral Therapy"],
+      "priceRange": "$$",
+      "description": "Psicólogo en Quito especializado en terapias de tercera generación ACT, DBT y TREC para niños, adolescentes y adultos."
+    }
+    </script>
+
+    <style>
+        body { font-family: 'Inter', sans-serif; color: #231f20; }
+        h1, h2, h3 { font-family: 'Merriweather', serif; }
+        .smooth-scroll { scroll-behavior: smooth; }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1); }
+        .bubble-quote { position: relative; background: #f0f9ff; border-radius: .4em; }
+        .bubble-quote:after { content: ''; position: absolute; bottom: 0; left: 20px; width: 0; height: 0; border: 10px solid transparent; border-top-color: #f0f9ff; border-bottom: 0; margin-bottom: -10px; }
+        
+        /* Estilos Clarity IA */
+        .ai-content { font-size: 0.95rem; line-height: 1.6; }
+        .ai-content ol { list-style-type: decimal; margin-left: 1.5rem; margin-bottom: 1rem; padding-left: 0.5rem; }
+        .ai-content li { margin-bottom: 0.75rem; padding-left: 0.5rem; }
+        .ai-content strong, .ai-content b { color: #004aa3; font-weight: 700; }
+        .ai-content em, .ai-content i { font-style: italic; color: #4b5563; }
+        
+        /* Estilos Modal */
+        .modal { transition: opacity 0.3s ease; }
+        .modal-content { max-height: 80vh; overflow-y: auto; }
+    </style>
+</head>
+<body class="bg-white smooth-scroll antialiased selection:bg-brand-secondary selection:text-white">
+
+    <!-- Navegación -->
+    <nav class="fixed w-full bg-white/95 backdrop-blur-sm shadow-sm z-50 border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center gap-3">
+                    <a href="#inicio" class="hover:opacity-80 transition flex items-center">
+                        <img src="images/Icono ig psicodanielromero (1).png" alt="Logo Daniel Romero Psicólogo Quito" class="h-12 w-auto">
+                    </a>
+                    <a href="#inicio" class="text-2xl font-bold text-brand-primary tracking-tight hover:opacity-80 transition">
+                        Daniel <span class="text-brand-secondary">Romero</span>
+                    </a>
+                </div>
+                
+                <!-- Menú Desktop -->
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#inicio" class="text-brand-text hover:text-brand-secondary font-medium transition">Inicio</a>
+                    <a href="#metodo" class="text-brand-text hover:text-brand-secondary font-medium transition">Mi método</a>
+                    <a href="#ia-tool" class="text-brand-text hover:text-brand-secondary font-medium transition flex items-center gap-1">
+                        <span>Clarity IA</span>
+                        <i data-lucide="sparkles" class="w-4 h-4 text-brand-accent"></i>
+                    </a>
+                    <a href="#servicios" class="text-brand-text hover:text-brand-secondary font-medium transition">Servicios</a>
+                    <a href="#agenda" class="px-5 py-2.5 bg-brand-primary text-white font-medium rounded-lg hover:bg-blue-800 transition shadow-lg shadow-blue-900/20">
+                        Agenda ahora
+                    </a>
+                </div>
+
+                <!-- Botón Móvil -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-brand-primary focus:outline-none">
+                        <i data-lucide="menu" class="w-8 h-8"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Menú Móvil -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 p-4">
+            <div class="flex flex-col space-y-4">
+                <a href="#inicio" class="text-brand-text font-medium">Inicio</a>
+                <a href="#metodo" class="text-brand-text font-medium">Mi método</a>
+                <a href="#ia-tool" class="text-brand-text font-medium flex items-center gap-2">Clarity IA <i data-lucide="sparkles" class="w-4 h-4 text-brand-accent"></i></a>
+                <a href="#servicios" class="text-brand-text font-medium">Servicios</a>
+                <a href="#agenda" class="text-brand-secondary font-bold">Agenda ahora</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="relative pt-32 pb-20 lg:pt-40 lg:pb-32 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+                
+                <!-- Columna Izquierda -->
+                <div class="lg:pt-4"> 
+                    <div class="inline-block px-3 py-1 mb-4 text-xs font-semibold tracking-wider text-brand-accent uppercase bg-orange-50 rounded-full border border-brand-accent/20">
+                        La terapia cambia vidas
+                    </div>
+                    
+                    <h1 class="text-5xl md:text-6xl font-bold text-brand-primary leading-tight mb-6">
+                        El cambio que buscas <br>
+                        <span class="text-brand-secondary">a un clic.</span>
+                    </h1>
+
+                    <!-- IMAGEN PARA MÓVIL (Visible solo en celular) -->
+                    <div class="lg:hidden relative w-40 mx-auto my-8">
+                        <div class="absolute inset-0 bg-gradient-to-t from-brand-primary/10 to-transparent rounded-full opacity-50 blur-xl -z-10"></div>
+                        <img src="images/f-perfil-sf.png" alt="Daniel Romero Psicólogo" class="object-contain w-full h-auto drop-shadow-xl">
+                    </div>
+
+                    <p class="text-xl text-brand-text/80 mb-10 max-w-lg leading-relaxed">
+                        Un espacio sin juicios. <strong>Psicoterapia en Quito</strong> especializada para <strong>niños, adolescentes y adultos</strong> desde el enfoque <strong>cognitivo conductual de tercera generación</strong> (ACT, DBT y TREC).
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#agenda" class="inline-flex justify-center items-center px-8 py-3.5 text-base font-semibold text-white bg-brand-primary rounded-lg hover:bg-blue-800 transition shadow-lg shadow-blue-900/20">
+                            Quiero mi Primera Sesión
+                            <i data-lucide="arrow-right" class="ml-2 w-5 h-5"></i>
+                        </a>
+                        <a href="#metodo" class="inline-flex justify-center items-center px-8 py-3.5 text-base font-semibold text-brand-primary bg-blue-50 border border-blue-100 rounded-lg hover:bg-blue-100 transition">
+                            Conoce cómo trabajo
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Columna Derecha (Imagen Desktop) -->
+                <div class="hidden lg:flex relative justify-end">
+                    <div class="relative w-full max-w-md aspect-[4/5] lg:aspect-square flex items-start justify-center">
+                        <div class="absolute inset-0 bg-gradient-to-t from-brand-primary/10 to-transparent rounded-full opacity-50 blur-2xl -z-10 transform translate-y-10"></div>
+                        <img src="images/f-perfil-sf.png" alt="Daniel Romero - Psicólogo" class="object-contain h-full w-auto drop-shadow-2xl hover:scale-105 transition duration-500">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Fondo Decorativo -->
+        <div class="absolute top-0 right-0 -z-10 w-1/2 h-full opacity-5 pointer-events-none">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#004aa3" d="M44.7,-76.4C58.9,-69.2,71.8,-59.1,81.6,-46.6C91.4,-34.1,98.1,-19.2,95.8,-5.3C93.5,8.6,82.2,21.5,70.6,31.2C59,40.9,47.1,47.5,35.7,54.8C24.3,62.1,13.4,70.1,1.4,67.7C-10.6,65.3,-23.7,52.5,-36.5,41.9C-49.3,31.3,-61.8,22.9,-69.1,10.7C-76.4,-1.5,-78.5,-17.5,-72.6,-31.6C-66.7,-45.7,-52.8,-57.9,-38.4,-64.9C-24,-71.9,-9.1,-73.7,4.4,-81.3L17.9,-88.9Z" transform="translate(100 100)" />
+            </svg>
+        </div>
+    </section>
+
+    <!-- Cita -->
+    <section class="bg-brand-primary py-16 text-white">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <i data-lucide="quote" class="w-10 h-10 text-brand-accent mx-auto mb-6 opacity-80"></i>
+            <h2 class="text-2xl md:text-3xl font-serif italic font-light leading-relaxed">
+                "Hace tiempo entendí que lo que se calla, regresa torcido; lo fácil, no crece; y lo que se evita, se agranda."
+            </h2>
+            <div class="w-16 h-1 bg-brand-accent mx-auto mt-8 mb-4"></div>
+            <p class="text-brand-secondary font-bold tracking-wide uppercase text-sm">Reflexión propia, inspirada por las incesantes voces que escucho de quienes acuden a la terapia</p>
+        </div>
+    </section>
+
+    <!-- Perfil Profesional + Video Youtube -->
+    <section id="sobre-mi" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="order-2 lg:order-1">
+                    <h2 class="text-sm font-bold tracking-widest text-brand-secondary uppercase mb-3">Perfil Profesional</h2>
+                    <h3 class="text-3xl md:text-4xl font-bold text-brand-primary mb-6">¿Qué hay Más allá de la escucha?</h3>
+                    
+                    <div class="prose text-brand-text/80 space-y-4 text-lg">
+                        <p>
+                            Como <strong>psicólogo clínico en Quito</strong>, entiendo que la empatía es necesaria, y en ocasiones no es suficiente. Mis pacientes no solo buscan ser escuchados; buscan entender sus patrones de conducta y herramientas efectivas para cambiarlos.
+                        </p>
+                        <p>
+                            Mi práctica se aleja de interpretaciones sin fundamento. Trabajo desde un marco <strong>Cognitivo Conductual de Tercera Generación</strong>, que se enfoca en entender el funcionamiento de lo que te genera malestar.
+                        </p>
+                        <p class="border-l-4 border-brand-accent pl-4 italic text-gray-600">
+                            "Prefiero la tristeza que acompaña la verdad sobre la felicidad de una noble mentira - Trabajaremos juntos para desafiar suposiciones y construir tu resiliencia."
+                        </p>
+                    </div>
+
+                    <div class="mt-8 grid grid-cols-2 gap-6">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 p-2 bg-blue-50 rounded-lg">
+                                <i data-lucide="brain-circuit" class="w-6 h-6 text-brand-primary"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="font-bold text-brand-text">Análisis Funcional</h4>
+                                <p class="text-sm text-gray-600">Entender el 'por qué'.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 p-2 bg-orange-50 rounded-lg">
+                                <i data-lucide="clock" class="w-6 h-6 text-brand-accent"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="font-bold text-brand-text uppercase">Estar presente</h4>
+                                <p class="text-sm text-gray-600">Un enfoque que permite cambios.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="order-1 lg:order-2 relative">
+                    <!-- VIDEO YOUTUBE CONTAINER -->
+                    <div class="aspect-video bg-gray-900 rounded-2xl overflow-hidden shadow-lg relative flex items-center justify-center border border-gray-100 group">
+                        <!-- IMPORTANTE: REEMPLAZA 'VIDEO_ID_AQUI' POR EL ID DE TU VIDEO DE YOUTUBE -->
+                        <iframe 
+                            class="w-full h-full"
+                            src="https://www.youtube.com/embed/Y0MbhrpT5Kg" 
+                            title="Bienvenida a Terapia - Daniel Romero" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="absolute -bottom-6 -left-6 w-32 h-32 bg-brand-accent/10 rounded-full -z-10"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Beneficios (ACT, DBT, TREC) -->
+    <section id="metodo" class="py-24 bg-brand-light relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-brand-primary mb-4">¿Por qué iniciar con la terapia AHORA?</h2>
+                <p class="text-lg text-brand-text/70">
+                    La terapia no es solo hablar, es transformar cómo interactúas con tu propia mente mediante herramientas de tercera generación.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- ACT -->
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 card-hover flex flex-col h-full">
+                    <div class="mb-6">
+                        <div class="bubble-quote p-4 text-gray-600 italic text-sm mb-2">
+                            "Siento que mi cabeza no para, viene un pensamiento tras otro y ya no disfruto nada de lo que hago."
+                        </div>
+                        <div class="flex items-center mt-2 pl-4">
+                            <div class="w-2 h-2 rounded-full bg-brand-secondary"></div>
+                            <span class="text-xs text-gray-400 ml-2">Lo que pensamos</span>
+                        </div>
+                    </div>
+                    <div class="mt-auto">
+                        <h4 class="font-bold text-brand-primary mb-2 flex items-center">
+                            <i data-lucide="arrow-right-circle" class="w-5 h-5 mr-2 text-brand-secondary"></i>
+                            Lo que la terapia puede enseñarte
+                        </h4>
+                        <p class="text-sm text-brand-text/80 mb-4">
+                            En ACT, en lugar de luchar contra el ruido mental, aprendemos a defusionarnos de él.
+                        </p>
+                        <div class="bg-blue-50 p-3 rounded-lg border border-blue-100">
+                            <p class="text-sm font-bold text-brand-primary">
+                                Nuestra meta: <span class="font-normal text-brand-text">Recuperar claridad mental y actuar según lo que realmente te importa.</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DBT -->
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 card-hover flex flex-col h-full">
+                    <div class="mb-6">
+                        <div class="bubble-quote p-4 text-gray-600 italic text-sm mb-2">
+                            "Mis emociones son una montaña rusa: salto de la calma a la ira o la tristeza profunda en segundos."
+                        </div>
+                        <div class="flex items-center mt-2 pl-4">
+                            <div class="w-2 h-2 rounded-full bg-brand-secondary"></div>
+                            <span class="text-xs text-gray-400 ml-2">Lo que pensamos</span>
+                        </div>
+                    </div>
+                    <div class="mt-auto">
+                        <h4 class="font-bold text-brand-primary mb-2 flex items-center">
+                            <i data-lucide="arrow-right-circle" class="w-5 h-5 mr-2 text-brand-secondary"></i>
+                            Lo que la terapia puede enseñarte
+                        </h4>
+                        <p class="text-sm text-brand-text/80 mb-4">
+                            Mediante DBT, desarrollaremos habilidades concretas de regulación emocional.
+                        </p>
+                        <div class="bg-blue-50 p-3 rounded-lg border border-blue-100">
+                            <p class="text-sm font-bold text-brand-primary">
+                                Nuestra meta: <span class="font-normal text-brand-text">Estabilidad emocional y relaciones interpersonales más sanas.</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TREC -->
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 card-hover flex flex-col h-full">
+                    <div class="mb-6">
+                        <div class="bubble-quote p-4 text-gray-600 italic text-sm mb-2">
+                            "Siento que si no lo hago perfecto soy un fracaso. Tengo que complacer a todos para ser valioso."
+                        </div>
+                        <div class="flex items-center mt-2 pl-4">
+                            <div class="w-2 h-2 rounded-full bg-brand-secondary"></div>
+                            <span class="text-xs text-gray-400 ml-2">Lo que pensamos</span>
+                        </div>
+                    </div>
+                    <div class="mt-auto">
+                        <h4 class="font-bold text-brand-primary mb-2 flex items-center">
+                            <i data-lucide="arrow-right-circle" class="w-5 h-5 mr-2 text-brand-secondary"></i>
+                            Lo que la terapia puede enseñarte
+                        </h4>
+                        <p class="text-sm text-brand-text/80 mb-4">
+                            Con la TREC, utilizaremos la lógica para desafiar esas exigencias absolutistas ("tengo que").
+                        </p>
+                        <div class="bg-blue-50 p-3 rounded-lg border border-blue-100">
+                            <p class="text-sm font-bold text-brand-primary">
+                                Nuestra meta: <span class="font-normal text-brand-text">Autoestima basada en la realidad y libertad para ser auténticamente tú.</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clarity IA Tool -->
+    <section id="ia-tool" class="py-24 bg-gradient-to-br from-blue-50 to-white relative overflow-hidden">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-10">
+                <div class="inline-flex items-center justify-center p-2 bg-white rounded-full shadow-md mb-4 animate-pulse-slow">
+                    <i data-lucide="sparkles" class="w-5 h-5 text-brand-accent mr-2"></i>
+                    <span class="text-xs font-bold text-brand-primary tracking-wider uppercase">Powered by Gemini AI</span>
+                </div>
+                <h2 class="text-3xl md:text-4xl font-bold text-brand-primary mb-4">Clarity - Un Asistente de Claridad Emocional ✨</h2>
+                <p class="text-lg text-brand-text/70">
+                    Haz un ejercicio y experimenta cómo estos modelos terapéuticos pueden ayudarte ahora mismo. <br class="hidden md:block">
+                    Escribe qué te preocupa. Clarity intentará confeccionar una breve orientación basada en ACT, DBT o TREC.
+                </p>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-xl border border-blue-100 p-6 md:p-8">
+                <div class="mb-6">
+                    <label for="user-thought" class="block text-sm font-semibold text-brand-primary mb-2">¿Qué está pasando por tu mente?</label>
+                    <textarea id="user-thought" rows="4" 
+                        class="w-full bg-gray-50 border border-gray-200 rounded-lg p-4 focus:outline-none focus:border-brand-secondary focus:ring-2 focus:ring-brand-secondary/20 transition resize-none placeholder-gray-400 text-brand-text"
+                        placeholder="Ejemplo: Me siento muy ansioso porque tengo una presentación mañana y creo que voy a fallar..."></textarea>
+                </div>
+
+                <div class="flex justify-end mb-6">
+                    <button id="analyze-btn" onclick="analyzeThought()" class="group relative inline-flex items-center justify-center px-8 py-3 text-base font-bold text-white transition-all duration-200 bg-brand-accent rounded-lg hover:bg-yellow-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-accent shadow-lg shadow-brand-accent/30">
+                        <span id="btn-text" class="flex items-center">Obtener Perspectiva de Clarity ✨</span>
+                        <div id="btn-loader" class="hidden absolute">
+                            <svg class="animate-spin h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                                <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                            </svg>
+                        </div>
+                    </button>
+                </div>
+
+                <div id="result-container" class="hidden bg-blue-50/50 rounded-xl border border-blue-100 p-6 animate-fade-in">
+                    <div class="flex items-start gap-4">
+                        <div class="flex-shrink-0 mt-1">
+                            <div class="w-10 h-10 rounded-full bg-brand-primary flex items-center justify-center shadow-md">
+                                <i data-lucide="bot" class="w-6 h-6 text-white"></i>
+                            </div>
+                        </div>
+                        <div class="flex-grow">
+                            <h4 class="text-sm font-bold text-brand-secondary uppercase tracking-wide mb-2">Orientación Clínica (IA)</h4>
+                            <div id="ai-response" class="prose prose-sm max-w-none text-brand-text ai-content"></div>
+                            <p class="text-xs text-gray-400 mt-4 border-t border-gray-200 pt-2 italic">
+                                * Nota: Esto es una respuesta generada por Inteligencia Artificial con fines netamente EDUCATIVOS.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="absolute -top-24 -left-24 w-64 h-64 bg-brand-secondary/5 rounded-full blur-3xl"></div>
+        <div class="absolute top-1/2 -right-24 w-64 h-64 bg-brand-accent/5 rounded-full blur-3xl"></div>
+    </section>
+
+    <!-- Servicios Tabs -->
+    <section id="servicios" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                <div class="lg:col-span-4">
+                    <h2 class="text-3xl font-bold text-brand-primary mb-6">Modalidades de Atención</h2>
+                    <p class="text-brand-text/70 mb-8">
+                        La terapia se adapta a tu vida, siempre manteniendo un encuadre claro para cada caso.
+                    </p>
+                    
+                    <div class="space-y-4">
+                        <button onclick="switchTab('individual')" id="tab-individual" class="w-full text-left p-4 rounded-lg border-l-4 border-brand-primary bg-blue-50 transition-all duration-300 hover:bg-blue-100 group">
+                            <div class="flex justify-between items-center">
+                                <span class="font-bold text-brand-primary">Psicoterapia Presencial</span>
+                                <i data-lucide="armchair" class="w-5 h-5 text-brand-secondary"></i>
+                            </div>
+                        </button>
+                        <button onclick="switchTab('online')" id="tab-online" class="w-full text-left p-4 rounded-lg border-l-4 border-transparent hover:border-brand-secondary hover:bg-gray-50 transition-all duration-300 group">
+                            <div class="flex justify-between items-center">
+                                <span class="font-bold text-brand-text group-hover:text-brand-primary">Psicoterapia Online</span>
+                                <i data-lucide="video" class="w-5 h-5 text-gray-400 group-hover:text-brand-secondary"></i>
+                            </div>
+                        </button>
+                        <button onclick="switchTab('groups')" id="tab-groups" class="w-full text-left p-4 rounded-lg border-l-4 border-transparent hover:border-brand-secondary hover:bg-gray-50 transition-all duration-300 group">
+                            <div class="flex justify-between items-center">
+                                <span class="font-bold text-brand-text group-hover:text-brand-primary">Grupos de Apoyo</span>
+                                <i data-lucide="users" class="w-5 h-5 text-gray-400 group-hover:text-brand-secondary"></i>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-8 bg-brand-light rounded-2xl p-8 border border-gray-100 relative min-h-[500px]">
+                    <!-- Presencial -->
+                    <div id="content-individual" class="tab-content transition-opacity duration-500 animate-fade-in">
+                        <div class="flex items-center mb-6">
+                            <span class="bg-brand-primary text-white p-3 rounded-full mr-4"><i data-lucide="map-pin" class="w-6 h-6"></i></span>
+                            <h3 class="text-2xl font-bold text-brand-primary">Psicoterapia Presencial para Niños, Adolescentes y Adultos</h3>
+                        </div>
+                        <p class="text-lg text-brand-text/80 mb-6">Sesiones de 50 minutos en un consultorio confidencial y seguro en Quito.</p>
+                        <div class="bg-white rounded-xl p-6 border border-gray-100 shadow-sm">
+                            <ul class="space-y-4">
+                                <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-brand-accent mt-1 mr-3 flex-shrink-0"></i><div><span class="font-semibold text-brand-text">Evaluación inicial:</span><p class="text-sm text-gray-600 mt-1">Comprender a fondo tu historia.</p></div></li>
+                                <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-brand-accent mt-1 mr-3 flex-shrink-0"></i><div><span class="font-semibold text-brand-text">Objetivos claros:</span><p class="text-sm text-gray-600 mt-1">Metas medibles.</p></div></li>
+                                <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-brand-accent mt-1 mr-3 flex-shrink-0"></i><div><span class="font-semibold text-brand-text">Tareas inter-sesión:</span><p class="text-sm text-gray-600 mt-1">Consolidar el aprendizaje.</p></div></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Online -->
+                    <div id="content-online" class="hidden tab-content transition-opacity duration-500 animate-fade-in">
+                        <div class="flex items-center mb-6">
+                            <span class="bg-brand-secondary text-white p-3 rounded-full mr-4"><i data-lucide="monitor" class="w-6 h-6"></i></span>
+                            <h3 class="text-2xl font-bold text-brand-secondary">Psicoterapia Online para Niños, Adolescentes y Adultos</h3>
+                        </div>
+                        <p class="text-lg text-brand-text/80 mb-6">Sesiones de 50 minutos por medio de Google Meets.</p>
+                        <div class="bg-white rounded-xl p-6 border border-gray-100 shadow-sm">
+                            <ul class="space-y-4">
+                                <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-brand-accent mt-1 mr-3 flex-shrink-0"></i><div><span class="font-semibold text-brand-text">Acuerdos:</span><p class="text-sm text-gray-600 mt-1">Conocer la psicoterapia en línea.</p></div></li>
+                                <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-brand-accent mt-1 mr-3 flex-shrink-0"></i><div><span class="font-semibold text-brand-text">Evaluación inicial:</span><p class="text-sm text-gray-600 mt-1">Conoceremos sobre ti.</p></div></li>
+                                <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-brand-accent mt-1 mr-3 flex-shrink-0"></i><div><span class="font-semibold text-brand-text">Beneficios y limitaciones:</span><p class="text-sm text-gray-600 mt-1">Conoce si se alinean a tus necesidades.</p></div></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Grupos -->
+                    <div id="content-groups" class="hidden tab-content transition-opacity duration-500 animate-fade-in">
+                        <div class="flex items-center mb-6">
+                            <span class="bg-brand-accent text-white p-3 rounded-full mr-4"><i data-lucide="heart-handshake" class="w-6 h-6"></i></span>
+                            <h3 class="text-2xl font-bold text-brand-text">Grupos de Apoyo</h3>
+                        </div>
+                        <p class="text-lg text-brand-text/80 mb-6">Para ansiedad o depresión. 90 minutos.</p>
+                        <div class="bg-white rounded-xl p-6 border border-gray-100 shadow-sm">
+                            <ul class="space-y-4">
+                                <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-brand-accent mt-1 mr-3 flex-shrink-0"></i><div><span class="font-semibold text-brand-text">Un lugar para el malestar:</span><p class="text-sm text-gray-600 mt-1">Compartir experiencias.</p></div></li>
+                                <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-brand-accent mt-1 mr-3 flex-shrink-0"></i><div><span class="font-semibold text-brand-text">Prevención:</span><p class="text-sm text-gray-600 mt-1">Hablar sobre los retos diarios.</p></div></li>
+                                <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-brand-accent mt-1 mr-3 flex-shrink-0"></i><div><span class="font-semibold text-brand-text">Espacio seguro:</span><p class="text-sm text-gray-600 mt-1">Escucha sin juicio.</p></div></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Agenda -->
+    <section id="agenda" class="bg-brand-primary text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div>
+                    <h2 class="text-3xl font-bold mb-6 font-serif">Agenda tu cita</h2>
+                    <p class="mb-8 text-blue-100 max-w-md">El primer paso puede ser el más difícil. Escríbeme y agenda tu primera sesión.</p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-center group"><div class="w-10 h-10 rounded-full bg-brand-secondary flex items-center justify-center mr-4"><i data-lucide="map-pin" class="w-5 h-5 text-white"></i></div><span>Francisco Pizarro y Sta. María, Quito</span></div>
+                        <div class="flex items-center group"><div class="w-10 h-10 rounded-full bg-brand-secondary flex items-center justify-center mr-4"><i data-lucide="mail" class="w-5 h-5 text-white"></i></div><a href="mailto:daniel.romero@psycologiaec.com" class="hover:text-brand-accent">daniel.romero@psycologiaec.com</a></div>
+                        <div class="flex items-center group"><div class="w-10 h-10 rounded-full bg-brand-secondary flex items-center justify-center mr-4"><i data-lucide="phone" class="w-5 h-5 text-white"></i></div><span>+593 98-777-430</span></div>
+                    </div>
+
+                    <!-- Google Maps -->
+                    <div class="mt-8 rounded-lg overflow-hidden border-2 border-brand-secondary/50 shadow-lg">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7570417852336!2d-78.49757652528755!3d-0.19835703544605153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59a7a97210e3d%3A0x6b4f74d758682a22!2sFrancisco%20Pizarro%20%26%20Santa%20Mar%C3%ADa%2C%20Quito!5e0!3m2!1ses!2sec!4v1709241512836!5m2!1ses!2sec" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+
+                    <div class="mt-8">
+                        <h4 class="text-sm font-bold text-brand-accent uppercase tracking-wider mb-4">Mis Redes Sociales</h4>
+                        <div class="flex space-x-4 items-center">
+                            <a href="https://www.instagram.com/psicologodanielromero/" target="_blank" class="text-blue-200 hover:text-white transition"><i data-lucide="instagram" class="w-6 h-6"></i></a>
+                            <a href="https://www.facebook.com/danielromero.psi" target="_blank" class="text-blue-200 hover:text-white transition"><i data-lucide="facebook" class="w-6 h-6"></i></a>
+                            <a href="https://www.tiktok.com/@danielromeropsico" target="_blank" class="text-blue-200 hover:text-white transition"><svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg></a>
+                            <a href="https://wa.me/59398777430" target="_blank" class="text-blue-200 hover:text-white transition"><svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></a>
+                            <a href="https://www.linkedin.com/in/daniel-romero-61447186/" target="_blank" class="text-blue-200 hover:text-white transition"><i data-lucide="linkedin" class="w-6 h-6"></i></a>
+                            <a href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2KnKM1sbHaPgcZ7XSqdOWqnL7W8VK8VcqvAlE4gwG7N0jfdrZU6W4y4MC4Yv1XUcK3Ul1oEsWV" target="_blank" class="text-blue-200 hover:text-white transition"><i data-lucide="calendar" class="w-6 h-6"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formulario -->
+                <div class="bg-white rounded-xl p-8 text-brand-text shadow-2xl">
+                    <h3 class="text-2xl font-bold text-brand-primary mb-2">¿Quieres dejarme un mensaje?</h3>
+                    <p class="text-gray-600 mb-6">Envía tu mensaje para saber cómo deseas que te pueda ayudar</p>
+                    
+                    <!-- Formulario conectado a Formspree -->
+                    <form action="https://formspree.io/f/xovglygw" method="POST">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                            <div>
+                                <label class="block text-sm font-semibold mb-1">Nombre</label>
+                                <input type="text" name="nombre" class="w-full bg-gray-50 border border-gray-200 rounded-lg p-3 focus:outline-none focus:border-brand-secondary focus:ring-1 focus:ring-brand-secondary transition" placeholder="Tu nombre" required>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold mb-1">Teléfono</label>
+                                <input type="tel" name="telefono" class="w-full bg-gray-50 border border-gray-200 rounded-lg p-3 focus:outline-none focus:border-brand-secondary focus:ring-1 focus:ring-brand-secondary transition" placeholder="099..." required>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-sm font-semibold mb-1">Correo Electrónico</label>
+                            <input type="email" name="email" class="w-full bg-gray-50 border border-gray-200 rounded-lg p-3 focus:outline-none focus:border-brand-secondary focus:ring-1 focus:ring-brand-secondary transition" placeholder="ejemplo@correo.com" required>
+                        </div>
+                        <div class="mb-6">
+                            <label class="block text-sm font-semibold mb-1">¿Qué quisiera trabajar en terapia? (Breve)</label>
+                            <textarea rows="4" name="mensaje" class="w-full bg-gray-50 border border-gray-200 rounded-lg p-3 focus:outline-none focus:border-brand-secondary focus:ring-1 focus:ring-brand-secondary transition" required></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-brand-secondary text-white font-bold py-3 rounded-lg hover:bg-blue-600 transition shadow-lg shadow-blue-500/30">
+                            Enviar Solicitud
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="mt-16 pt-8 border-t border-blue-800 text-center text-sm text-blue-300 flex flex-col md:flex-row justify-between items-center">
+                <p>&copy; 2025 Daniel Romero. Todos los derechos reservados.</p>
+                <button onclick="toggleModal()" class="hover:text-white transition mt-2 md:mt-0 underline cursor-pointer">Política de uso y Privacidad</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Privacidad -->
+    <div id="privacy-modal" class="fixed inset-0 z-50 hidden bg-black/50 backdrop-blur-sm flex items-center justify-center p-4 modal">
+        <div class="bg-white rounded-xl shadow-2xl w-full max-w-2xl max-h-[90vh] flex flex-col">
+            <div class="p-6 border-b border-gray-100 flex justify-between items-center">
+                <h3 class="text-xl font-bold text-brand-primary">Política de Privacidad</h3>
+                <button onclick="toggleModal()" class="text-gray-400 hover:text-gray-600"><i data-lucide="x" class="w-6 h-6"></i></button>
+            </div>
+            <div class="p-6 overflow-y-auto modal-content text-gray-600 space-y-4 text-sm leading-relaxed">
+                <p>En cumplimiento con la <strong>Ley Orgánica de Protección de Datos Personales del Ecuador</strong>, informamos:</p>
+                <p><strong>1. Responsable:</strong> Psic. Clínico Daniel Romero. Tratamiento confidencial.</p>
+                <p><strong>2. Finalidad:</strong> Facilitar comunicación, agendamiento y proveer información. No se venden datos.</p>
+                <p><strong>3. Base Legal:</strong> Consentimiento libre al enviar formularios.</p>
+                <p><strong>4. Derechos ARCO:</strong> Usted tiene derecho a Acceder, Rectificar, Cancelar u Oponerse al tratamiento de sus datos.</p>
+                <p><strong>5. Retención:</strong> Solo durante el tiempo necesario para la finalidad recabada.</p>
+            </div>
+            <div class="p-6 border-t border-gray-100 bg-gray-50 rounded-b-xl flex justify-end">
+                <button onclick="toggleModal()" class="px-6 py-2 bg-brand-primary text-white rounded-lg hover:bg-brand-secondary transition">Entendido</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        lucide.createIcons();
+
+        // Menu Movil
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); });
+
+        // Modal
+        function toggleModal() {
+            const modal = document.getElementById('privacy-modal');
+            modal.classList.toggle('hidden');
+        }
+
+        // Tabs
+        function switchTab(tabId) {
+            document.querySelectorAll('.tab-content').forEach(content => { content.classList.add('hidden'); });
+            document.querySelectorAll('button[id^="tab-"]').forEach(btn => {
+                btn.classList.remove('bg-blue-50', 'border-brand-primary');
+                btn.classList.add('border-transparent');
+                const textSpan = btn.querySelector('span');
+                const icon = btn.querySelector('svg');
+                if(textSpan) { textSpan.classList.remove('text-brand-primary'); textSpan.classList.add('text-brand-text'); }
+                if(icon) { icon.classList.remove('text-brand-secondary'); icon.classList.add('text-gray-400'); }
+            });
+            const selectedContent = document.getElementById(`content-${tabId}`);
+            selectedContent.classList.remove('hidden');
+            const activeBtn = document.getElementById(`tab-${tabId}`);
+            activeBtn.classList.remove('border-transparent');
+            activeBtn.classList.add('bg-blue-50', 'border-brand-primary');
+            const activeText = activeBtn.querySelector('span');
+            const activeIcon = activeBtn.querySelector('svg');
+            if(activeText) { activeText.classList.remove('text-brand-text'); activeText.classList.add('text-brand-primary'); }
+            if(activeIcon) { activeIcon.classList.remove('text-gray-400'); activeIcon.classList.add('text-brand-secondary'); }
+        }
+
+        // Clarity IA Logic
+        async function analyzeThought() {
+            const inputField = document.getElementById('user-thought');
+            const resultContainer = document.getElementById('result-container');
+            const aiResponseDiv = document.getElementById('ai-response');
+            const btnText = document.getElementById('btn-text');
+            const btnLoader = document.getElementById('btn-loader');
+            const analyzeBtn = document.getElementById('analyze-btn');
+            const userText = inputField.value.trim();
+
+            if (!userText) { alert('Por favor, escribe algo para analizar.'); return; }
+
+            // TU API KEY REAL INTEGRADA
+            const apiKey = "AIzaSyCnc6P-QVXtIF12D6vhavUMhj0LG1OQSeA"; 
+
+            btnText.classList.add('opacity-0');
+            btnLoader.classList.remove('hidden');
+            analyzeBtn.disabled = true;
+            resultContainer.classList.add('hidden');
+
+            try {
+                const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=${apiKey}`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        contents: [{ parts: [{ text: userText }] }],
+                        systemInstruction: {
+                            parts: [{
+                                text: `Actúa como un asistente clínico experto en Terapias Cognitivo Conductuales de Tercera Generación (ACT, DBT, TREC). Tu nombre es Clarity.
+                                IMPORTANTE: NO uses Markdown. Responde con HTML.
+                                Estructura:
+                                <p>Hola, gracias por usar a Clarity IA...</p>
+                                <ol>
+                                    <li><b>Validación:</b> Frase empática.</li>
+                                    <li><b>Análisis Breve:</b> Identifica distorsión o evitación.</li>
+                                    <li><b>Herramienta Sugerida:</b> Técnica breve (metáfora ACT, etc).</li>
+                                    <li><b>Cierre:</b> Frase motivadora.</li>
+                                </ol>
+                                Tono: Profesional, cálido, conciso (máx 150 palabras). Idioma: Español.`
+                            }]
+                        }
+                    })
+                });
+
+                const data = await response.json();
+                if (data.error) throw new Error(data.error.message);
+                
+                aiResponseDiv.innerHTML = data.candidates[0].content.parts[0].text;
+                resultContainer.classList.remove('hidden');
+                resultContainer.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+
+            } catch (error) {
+                console.error('Error:', error);
+                alert('Hubo un error al conectar con el asistente. Verifica tu conexión.');
+            } finally {
+                btnText.classList.remove('opacity-0');
+                btnLoader.classList.add('hidden');
+                analyzeBtn.disabled = false;
+            }
+        }
+    </script>
+</body>
+</html>
